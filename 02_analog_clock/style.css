@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #5045e4, #020d2c);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.clock {
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.5rem solid #ddd;
+    position: relative;
+}
+
+.hours {
+    background-color: #000;
+    height: 10px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0;
+}
+
+.minutes {
+    background-color: #000;
+    height: 5px;
+    width: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0;
+}
+
+.seconds {
+    background-color: #b40404;
+    height: 3px;
+    width: 225px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0;
+}
+
+.hours,
+.minutes,
+.seconds {
+    transform: rotate(-90deg);
+}

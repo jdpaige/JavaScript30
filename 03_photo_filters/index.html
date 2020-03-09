@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="slider.css" />
+        <title>Photo Filters</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <h1 class="header__title">Photo Filters</h1>
+        </header>
+        <div class="main" id="main">
+            <div id="controls" class="main__controls">
+                <div class="control" id="blur-control">
+                    <h2>Blur</h2>
+                    <input
+                        type="range"
+                        min="1"
+                        max="25"
+                        value="0"
+                        data-original-value="0"
+                        id="blur"
+                        class="slider"
+                    />
+                </div>
+
+                <div class="control" id="brightness-control">
+                    <h2>Brightness</h2>
+                    <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="100"
+                        data-original-value="100"
+                        id="brightness"
+                        class="slider"
+                    />
+                </div>
+
+                <div class="control" id="contrast-control">
+                    <h2>Contrast</h2>
+                    <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="100"
+                        data-original-value="100"
+                        id="contrast"
+                        class="slider"
+                    />
+                </div>
+
+                <div class="control" id="hue-rotate-control">
+                    <h2>Hue Rotate</h2>
+                    <input
+                        type="range"
+                        min="0"
+                        max="360"
+                        value="0"
+                        data-original-value="0"
+                        id="hue"
+                        class="slider"
+                    />
+                </div>
+
+                <div class="control" id="saturate-control">
+                    <h2>Saturate</h2>
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="100"
+                        data-original-value="100"
+                        id="saturate"
+                        class="slider"
+                    />
+                </div>
+
+                <div class="control" id="sepia-control">
+                    <h2>Sepia</h2>
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        data-original-value="0"
+                        id="sepia"
+                        class="slider"
+                    />
+                </div>
+                <button class="btn" id="reset-btn">Reset Filters</button>
+            </div>
+            <div class="main__photo" id="photo-container">
+                <img src="https://source.unsplash.com/random" id="photo" />
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
