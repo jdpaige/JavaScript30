@@ -12,6 +12,7 @@ const colors = document.querySelectorAll(".color");
 
 // default context values
 ctx.lineCap = "round";
+ctx.lineJoin = 'round';
 
 function show(e) {
     ctx.beginPath();
