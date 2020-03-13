@@ -1,0 +1,56 @@
+.colors {
+    display: flex;
+    flex-direction: column;
+}
+
+.colors-palette {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.color {
+    display: inline-block;
+    height: 2rem;
+    width: 3.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.color:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.color-black {
+    background-color: black;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-orange {
+    background-color: orange;
+}
+
+.color-yellow {
+    background-color: yellow;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.color-blue {
+    background-color: blue;
+}
+
+.color-indigo {
+    background-color: indigo;
+}
+
+.color-violet {
+    background-color: violet;
+}

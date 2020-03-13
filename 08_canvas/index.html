@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="colors.css" />
+        <title>Canvas</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+                <div>
+                    <p>Pen Size</p>
+                    <button class="btn" id="btn-minusPen">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button class="btn" id="btn-plusPen">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button id="btn-resetPen" class="btn">
+                        Reset
+                    </button>
+                </div>
+
+                <button id="btn-resetAll" class="btn">Start Over</button>
+            </div>
+            <div class="canvas-area">
+                <canvas id="canvas" width="700" height="700"> </canvas>
+                <div class="colors">
+                    <div class="colors-palette">
+                        <div
+                            class="color color-black"
+                            data-color="rgb(0,0,0)"
+                        ></div>
+                        <div
+                            class="color color-red"
+                            data-color="rgb(255,0,0)"
+                        ></div>
+                        <div
+                            class="color color-orange"
+                            data-color="rgb(255, 165, 0)"
+                        ></div>
+                        <div
+                            class="color color-yellow"
+                            data-color="rgb(255, 255, 0)"
+                        ></div>
+                        <div
+                            class="color color-green"
+                            data-color="rgb(0, 128, 0)"
+                        ></div>
+                        <div
+                            class="color color-blue"
+                            data-color="rgb(0, 0, 255)"
+                        ></div>
+                        <div
+                            class="color color-indigo"
+                            data-color="rgb(75, 0, 130)"
+                        ></div>
+                        <div
+                            class="color color-violet"
+                            data-color="rgb(238, 130, 238)"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script
+            src="https://kit.fontawesome.com/02322c8963.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
