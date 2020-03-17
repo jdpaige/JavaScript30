@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #222, #555);
+    min-height: 100vh;
+    margin: auto;
+}
+
+header,
+.end-section {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    letter-spacing: 4px;
+    font-size: 42px;
+}
+
+.end-section {
+    margin-top: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.checkbox {
+    font-size: 24px;
+
+    font-family: "Lato", sans-serif;
+    border: 3px solid #333;
+    border-radius: 5px;
+    background-color: #eee;
+    width: 250px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox--option {
+    margin: 5px 0;
+    border-bottom: 1px solid #999;
+}
