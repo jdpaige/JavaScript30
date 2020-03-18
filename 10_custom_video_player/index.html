@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Custom Video Player</title>
+    </head>
+    <body>
+        <h1>custom video controls</h1>
+        <video
+            src="/media/video/washington.mp4"
+            type="video/mp4"
+            width="1000px"
+        ></video>
+        <div class="controls" id="controls">
+            <div class="controls-buttons">
+                <div class="controls-btn" id="stop">
+                    <i class="fas fa-stop fa-2x"></i>
+                </div>
+
+                <div class="controls-btn hide" id="pause">
+                    <i class="fas fa-pause fa-2x"></i>
+                </div>
+                <div class="controls-btn" id="play">
+                    <i class="fas fa-play fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="progressContainer" id="progressContainer">
+                <div class="duration" id="duration">
+                    <span class="totalProgress" id="totalProgress"></span>
+                </div>
+                <span class="time" id="time">0:00</span>
+            </div>
+
+            <div class="controls-volume" id="volume">
+                <input
+                    type="range"
+                    name="volume"
+                    min="1"
+                    step="1"
+                    value="100"
+                    id="volume-slider"
+                />
+                <div class="controls-btn" id="volume-toggle">
+                    <i class="fas fa-volume-up fa-2x"></i>
+                </div>
+                <div class="controls-btn hide" id="mute">
+                    <i class="fas fa-volume-mute fa-2x"></i>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://kit.fontawesome.com/02322c8963.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
