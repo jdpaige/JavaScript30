@@ -37,6 +37,18 @@ playBtn.addEventListener("click", () => {
     pauseBtn.classList.toggle("hide");
 });
 
+video.addEventListener("click", () => {
+    if (isPlaying) {
+        video.pause();
+        isPlaying = false;
+    } else {
+        video.play();
+        isPlaying = true;
+    }
+    playBtn.classList.toggle("hide");
+    pauseBtn.classList.toggle("hide");
+});
+
 // VOLUME CONTROLS
 volOn.addEventListener("click", () => {
     video.muted = true;
